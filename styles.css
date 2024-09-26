@@ -1,127 +1,182 @@
-* {
+*{
+    /* box-sizing: border-box; */
+    padding: 0;
     margin: 0;
-    overflow-x: hidden;
-
+    font-family: Roboto, sans-serif;
 }
-body {
-    display: flex;
-    flex-direction: column;
+header {
+    background-color:#1F2937;
+    padding:48px;
 }
-.top-page {
-    height: 100px;
-    width: 100%;
-    background: #1F2937;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    
-    
+.motivational-quote {
+    background-color: #E5E7EB;
 }
-
-.main-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.top-list {
-    margin-left: auto;
-    margin-right: 110px;
-    
-}
-ul, li {
+ul {
     list-style: none;
-    display: inline-block;
-    margin-top: 0;
-    
 }
-.middle {
-    background: #1F2937;
-    color: #f9faf8;
-    font-size: 35px;
-    weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    
-
-}
-h1 {
-    width: 400px;
-}
-p {
-    font-size: 24px;
-    width: 400px;
-    margin-top: 35px;
-    
-}
-img {
-    width: 500px;
-    height: 270px;
-    margin-left: 86px;
-}
-button {
-    background: #3882F6;
-    color: white;
-    height: 50px;
-    width: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 8px;
-    font-weight: 650;
-    margin-top: 25px;
-
-}
-.bottom .square {
-    height: 250px;
-    width: 250px;
-    color: white;
-    background: black;
-    margin: 2px;
-    align-items: center;
-}
-.google {
+a {
     text-decoration: none;
-    color: yellow;
+    color: #E5E7EB;
 }
-.bottom{
-    height: 350px;
-    background: white;
+header .logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+.hero-main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+.hero-left p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.sign-up-button {
+    background-color: #3882F6;
+    font-size: 18px;
+    color: #E5E7EB;
+    border: none;
+}
+.info-title {
+    font-size: 36px;
+    color:#1F2937;
+}
+.quote {
+    font-style:italic;
+    font-weight: 100;
+    font-size: 36px;
+    color: #1F2937
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.nav-links{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+}
+.header-container {
+    display: flex;
+    max-width: 1080px;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    gap:16px;
+}
+.hero-left {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* justify-content: baseline; */
+    gap:8px
+}
+.hero-right{
     display: flex;
     justify-content: center;
-    gap: 45px;
     align-items: center;
+    width: 600px;
+    height:300px;
+    background-color: #b8b9b9;
+    flex-shrink: 0;
+    font-size: 36px;
+    color:black;
+}
+.sign-up-button {
+    padding:5px 20px;
+    border-radius: 8px;
+}
+.information {
+    padding:0 48px 0 48px;
 }
 
-.bottom div {
+.information-container{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 20px auto;
+    padding-bottom: 20px;
 }
-.low {
+.description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex: 1 0 400px;
+    gap:25px;
+}
+.info-pic {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #b8b9b9;
+    font-size: 20px;
+}
+.pic-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 200px;
+    gap:5px
 }
-
-.quote {
-    height: 350px;
-    background: grey;
+.description-text{
+    text-align: center;
+    font-size: 18px;
+    max-width: 200px;
+}
+.motivational-quote {
+    padding:80px 48px 80px 48px;
+}
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.author {
+    align-self: flex-end;
+    font-size: 20px;
+}
+.cta-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding:40px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    gap:20px;
+    border-radius: 5px;
 }
-.quote div{
-    font-size: 45px;
-
-}
-footer {
-    color:white;
+.cta-left{
     display: flex;
-    background: #1F2937;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    gap:5px
+}
+.cta-main-text{
+    font-size: 22px;
+    font-weight: bold;
+}
+.cta-button button {
+    border: 1px solid #F9FAF8;
+}
+footer{
+    background-color: #1F2937;
+    color:#F9FAF8;
+    text-align: center;
+    padding: 10px 0;
 }
